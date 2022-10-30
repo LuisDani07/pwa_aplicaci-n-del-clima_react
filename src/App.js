@@ -1,7 +1,12 @@
+import {fetchWeather} from './api/fetchWeather'
+import './App.css';
+
 
 function App() {
   return (
-    <div>App</div>
+    <div className='main-container'>
+
+    </div>
   )
 }
 
