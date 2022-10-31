@@ -11,7 +11,7 @@
     />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
 
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!-- <link rel="manifest" href="%PUBLIC_URL%/manifest.json" /> -->
 
     <title>Wheather App</title>
   </head>
@@ -22,7 +22,7 @@
       if('serviceWorker' in navigator){
         window.addEventListener('load', ()=>{
           navigator.serviceWorker.register('./serviceworker.js')
-          .then((reg)=>console.log('success'), reg.scope)
+          .then((reg)=>console.log('success: ', reg.scope))
           .catch((err)=>console.log('failure', err));
         })
       }
